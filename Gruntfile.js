@@ -138,7 +138,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bytesize');
   grunt.loadNpmTasks('grunt-mocha');
   grunt.loadNpmTasks('grunt-plato');
-  grunt.registerTask('scripts', ['jshint', 'bower', 'concat', 'uglify', 'clean:bower', 'mocha', 'bytesize']);
+  grunt.registerTask('scripts', ['jshint', 'concat', 'uglify', 'clean:bower', 'mocha', 'bytesize']);
   grunt.registerTask('default', ['scripts']);
   grunt.registerTask('dev', ['connect:server', 'watch']);
   grunt.registerTask('reports', ['plato', 'connect:plato']);
