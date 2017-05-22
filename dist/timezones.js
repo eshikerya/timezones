@@ -33,7 +33,7 @@
 
       for(i = 0; i < c; i++) {
         city = this.cities[i];
-        html += '<option data-offset="' + city.offset + '" value="'+ city.offset +'">(GMT ' + city.offset + ') ' + this.formatName(city.name) +'</option>';
+        html += '<option data-offset="' + city.offset + '" value="'+ city.name +'">(GMT ' + city.offset + ') ' + this.formatName(city.name) +'</option>';
       }
 
       return html;
